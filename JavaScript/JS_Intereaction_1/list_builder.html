@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Builder</title>
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./css/list_builder.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="" id="builder">
+                    <h4 class="my-3">List Builder</h4>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="textInput">
+                        <button class="btn btn-dark" id="createBtn">
+                            <i class="bi bi-plus-circle"></i> Add List
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="">Total <span id="total" class="badge bg-black">0</span></p>
+                        <p class="">Done <span id="done" class="badge bg-black">0</span></p>
+                    </div>
+                    <ul class="list-group" id="lists">
+                        <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="" id="flexCheckChecked" checked>
+                                <label for="flexCheckChecked" class="form-check-label">San Kyi Tar</label>
+                            </div>
+                            <button class="btn btn-danger btn-sm ms-auto" id="delBtn">Del</button>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./list_builder.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .sidebar{
+            width: 200px;
+            height: 100vh;
+            background-color: brown;
+            transform: translateX(-100%);
+            transition-duration: 0.5s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition-property: transform;
+        }
+        .sidebar.open{
+            transform: translateX(0);
+        }
+        .sidebar.open::after{
+            content: "";
+            background-color: rgba(97, 94, 94, 0.486);
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <button>Show</button>\
+    <h1>Min Ga Lar Par</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Repellendus labore sunt impedit ut voluptates a saepe? Dolores, 
+        obcaecati quae dolore, repellendus maxime, vel sapiente adipisci 
+        beatae eum dolorem et accusantium?
+    </p>
+    <div class="sidebar open"></div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: blueviolet;
+            animation-name: changeColor;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+
+            /* animation-name: toRight;
+            animation-delay: 2s;
+            animation-fill-mode: both; */
+
+
+            /* transition: background-color 5s; */
+        }
+        /* .box:hover{
+            background-color: violet;
+        } */
+
+
+        /* @keyframes changeColor {
+            start
+            from{
+                background-color: black;
+            }
+            end
+            to{
+                background-color: blueviolet;
+            }
+        } */
+
+        @keyframes changeColor {
+            0%{
+                background-color: black;
+            }
+            20%{
+                background-color: orange;
+                transform: translateX(300px) rotateZ(360deg);
+            }
+            40%{
+                background-color: green;
+                transform: translateX(300px) translateY(300px) rotateZ(0deg);
+            }
+            60%{
+                background-color: pink;
+                transform: translateY(300px) translateX(0px) rotateZ(360deg);
+            }
+            80%{
+                background-color: skyblue;
+                transform: translateX(0px) translateY(0px) rotateZ(360deg) rotateZ(0deg);
+            }
+            100%{
+                background-color: blueviolet;
+                transform: translateX(0px) translateY(0px) rotateZ(360deg) rotateZ(0deg) rotateZ(0deg);
+
+            }
+        }
+
+        @keyframes toRight {
+            0%{
+                transform: translateX(200px);
+            }
+            100%{
+                transform: translateX(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

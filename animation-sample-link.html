@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="./node_modules/imagehover.css/css/imagehover.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .box{
+            margin: 30px;
+            padding: 30px;
+            background-color: black;
+            color: white;
+        }
+
+        .img1{
+            width: 200px;
+        }
+        
+        .scroll-to-up{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            bottom: 20px;
+            right: 20px;
+            position: fixed;
+            text-align: center;
+            line-height: 50px;
+            border: 5px solid black;
+            cursor: pointer;
+            overflow: hidden;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="one" class="box animate__animated animate__bounce animate__delay-2s	2s">
+        <h1>Min Ga Lar Par</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
+    </div>
+
+    <div class="box animate__animated animate__bounce animate__fast 800ms">
+        <h1>Min Ga Lar Par</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
+    </div>
+
+    <div class="box animate__animated animate__bounce">
+        <h1>Min Ga Lar Par</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
+    </div>
+
+    <hr>
+
+    <figure class="imghvr-slide-down">
+        <img class="img1" src="https://data.kpopstarz.com/data/images/full/546498/top-20-most-beautiful-korean-actresses-of-all-time.png?w=549?w=430">
+        <figcaption>
+          <h3>Pretty Girl</h3>
+          <p>So cute So fancy</p>
+        </figcaption>
+        <a href="http://www.imagehover.io"></a>
+    </figure>
+
+    <figure class="imghvr-slide-up">
+        <img class="img1" src="https://data.kpopstarz.com/data/images/full/546498/top-20-most-beautiful-korean-actresses-of-all-time.png?w=549?w=430">
+        <figcaption>
+          <h3>Pretty Girl</h3>
+          <p>So cute So fancy</p>
+        </figcaption>
+        <a href="http://www.imagehover.io"></a>
+    </figure>
+
+    <figure class="imghvr-push-right">
+        <img class="img1" src="https://data.kpopstarz.com/data/images/full/546498/top-20-most-beautiful-korean-actresses-of-all-time.png?w=549?w=430">
+        <figcaption>
+          <h3>Pretty Girl</h3>
+          <p>So cute So fancy</p>
+        </figcaption>
+        <a href="http://www.imagehover.io"></a>
+    </figure>
+
+    <figure class="imghvr-hinge-up">
+        <img class="img1" src="https://data.kpopstarz.com/data/images/full/546498/top-20-most-beautiful-korean-actresses-of-all-time.png?w=549?w=430">
+        <figcaption>
+          <h3>Pretty Girl</h3>
+          <p>So cute So fancy</p>
+        </figcaption>
+        <a href="http://www.imagehover.io"></a>
+    </figure>
+
+    <figure class="imghvr-flip-diag-1">
+        <img class="img1" src="https://data.kpopstarz.com/data/images/full/546498/top-20-most-beautiful-korean-actresses-of-all-time.png?w=549?w=430">
+        <figcaption>
+          <h3>Pretty Girl</h3>
+          <p>So cute So fancy</p>
+        </figcaption>
+        <a href="http://www.imagehover.io"></a>
+    </figure>
+
+    <a href="#one" class="scroll-to-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up animate__animated animate__bounce animate__infinite" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+          </svg>
+    </a>
+</body>
+</html>

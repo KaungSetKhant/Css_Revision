@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: 30px;
+            padding: 30px;
+            background-color: cornflowerblue;
+            /* animation: slide linear 2s both; */
+            /* animation: fade linear 2s both; */
+            /* animation: scale linear 2s both; */
+        }
+        /* fade, slide, scale  */
+        @keyframes fade {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide {
+            from{
+                /* transform: translateY(-200%); */
+                transform: translateX(-200%);
+            }
+            to{
+                /* transform: translateY(0); */
+                transform: translateX(0);
+            }
+        }
+
+        /* for multiple box  */
+        .box:nth-child(1){
+            /* animation: slide 0.5s linear both; */
+            animation: scale 0.5s linear both;
+        }
+        .box:nth-child(2){
+            /* animation: slide 0.5s 0.3s linear both; */
+            animation: scale 0.5s 0.3s linear both;
+        }
+        .box:nth-child(3){
+            /* animation: slide 0.5s 0.4s linear both; */
+            animation: scale 0.5s 0.4s linear both;
+        }
+       
+        @keyframes scale {
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Min Ga Lar Par</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sunt vitae distinctio mollitia explicabo sequi adipisci ad dolorum aut suscipit 
+            illo omnis exercitationem nisi aliquid inventore sit, tenetur, perspiciatis neque! Atque!
+        </p>
+    </div>
+
+    <div class="box">
+        <h1>Min Ga Lar Par</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sunt vitae distinctio mollitia explicabo sequi adipisci ad dolorum aut suscipit 
+            illo omnis exercitationem nisi aliquid inventore sit, tenetur, perspiciatis neque! Atque!
+        </p>
+    </div>
+
+    <div class="box">
+        <h1>Min Ga Lar Par</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sunt vitae distinctio mollitia explicabo sequi adipisci ad dolorum aut suscipit 
+            illo omnis exercitationem nisi aliquid inventore sit, tenetur, perspiciatis neque! Atque!
+        </p>
+    </div>
+</body>
+</html>
